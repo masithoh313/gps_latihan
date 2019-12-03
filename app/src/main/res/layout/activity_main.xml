@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:gravity="center_horizontal"
+        android:text="0.0 / 0.0"
+        android:textColor="#14FA54"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_location"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="23dp"
+        android:drawableStart="@drawable/ic_play_circle_filled_black_24dp"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_location"
+        android:layout_alignRight="@id/button2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="-100dp"
+        android:drawableEnd="@drawable/ic_stop_black_24dp"
+        android:enabled="false"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>
